@@ -1,12 +1,12 @@
 {
 	"format_version": 2,
 	"header": {
-		"name": "Associated Realm Essentials",
-		"description": "Version 25.3",
-		"uuid": "4c11d363-c9ee-44ac-9450-76ff868f788b",
+		"name": "Hardcore+",
+		"description": "Version 1.0",
+		"uuid": "baf32714-45ab-42e3-bc65-598eab48f54e",
 		"version": [
-			25,
-			3,
+			1,
+			0,
 			0
 		],
 		"min_engine_version": [
@@ -19,7 +19,7 @@
 		{
 			"description": "Version 25.3",
 			"type": "data",
-			"uuid": "be381c28-4317-46ce-99b3-9e66e4807a9a",
+			"uuid": "a8517ab8-85f0-49bf-9d08-b1f35b782ce6",
 			"version": [
 				3,
 				3,
@@ -27,10 +27,10 @@
 			]
 		},
 		{
-			"description": "Associated Realm Essentials Brought to you by Maragi Developments (c)",
+			"description": "Created By MajorRage3367",
 			"language": "javascript",
 			"type": "script",
-			"uuid": "52436447-f3ce-4db1-b50a-61ae3eb5b300",
+			"uuid": "1d218d52-9203-4c4d-bbdf-b49423d02d9f",
 			"version": [
 				3,
 				3,
@@ -42,8 +42,8 @@
 	"dependencies": [
 		{
 			"module_name": "resource",
-			"uuid": "d37d9201-8153-48d7-8ed3-b5a60572116b",
-			"version": [5, 6, 0]
+			"uuid": "98fccaf0-3135-4ecb-b947-a11d736a8d8b",
+			"version": [1, 0, 0]
 		},
 		{
 			"module_name": "@minecraft/server",
