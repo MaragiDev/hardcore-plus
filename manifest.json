@@ -1,0 +1,64 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "Associated Realm Essentials",
+		"description": "Version 25.3",
+		"uuid": "4c11d363-c9ee-44ac-9450-76ff868f788b",
+		"version": [
+			25,
+			3,
+			0
+		],
+		"min_engine_version": [
+			1,
+			20,
+			50
+		]
+	},
+	"modules": [
+		{
+			"description": "Version 25.3",
+			"type": "data",
+			"uuid": "be381c28-4317-46ce-99b3-9e66e4807a9a",
+			"version": [
+				3,
+				3,
+				97
+			]
+		},
+		{
+			"description": "Associated Realm Essentials Brought to you by Maragi Developments (c)",
+			"language": "javascript",
+			"type": "script",
+			"uuid": "52436447-f3ce-4db1-b50a-61ae3eb5b300",
+			"version": [
+				3,
+				3,
+				97
+			],
+			"entry": "scripts/main.js"
+		}
+	],
+	"dependencies": [
+		{
+			"module_name": "resource",
+			"uuid": "d37d9201-8153-48d7-8ed3-b5a60572116b",
+			"version": [5, 6, 0]
+		},
+		{
+			"module_name": "@minecraft/server",
+			"version": "2.4.0-beta"
+		},
+		{
+			"module_name": "@minecraft/server-ui",
+			"version": "2.1.0-beta"
+		},
+		{
+			"module_name": "@minecraft/server-admin",
+			"version": "1.0.0-beta"
+		}
+	],
+	"capabilities": [
+		"script_eval"
+	]
+}
