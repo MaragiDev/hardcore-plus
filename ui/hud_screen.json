@@ -1,0 +1,80 @@
+{
+    "New_Player_Animation_Image": {
+        "type": "image",
+        "texture": "textures/ui/cwr_logo",
+        "anchor_from": "top_middle",
+        "anchor_to": "top_middle",
+        "offset": [
+        0,
+        5
+        ],
+        "size": [
+        23,
+        23
+        ],
+        "layer": 3,
+        "alpha": 0.5
+    },
+    "New_Player_Animation_UI": {
+        "type": "label",
+        "text": "§l§2Clidewood §aRealm §8- §eFun For Everyone!",
+        "shadow": true,
+        "font_size": "left",
+        "offset": [
+        0,
+        32
+        ],
+        "anchor_from": "top_middle",
+        "anchor_to": "top_middle",
+        "alpha": 0.5
+    },
+    "New_Player_Animation_UI1": {
+        "type": "label",
+        "text": "§bdiscord.gg/vPzKSXR9DM",
+        "shadow": true,
+        "font_size": "left",
+        "offset": [
+        0,
+        42
+        ],
+        "anchor_from": "top_middle",
+        "anchor_to": "top_middle",
+        "alpha": 0.5
+    },
+    "New_Player_Animation_UI2": {
+        "type": "label",
+        "text": "§bclidewoodrealm.localplayer.dev/forum/",
+        "shadow": true,
+        "font_size": "left",
+        "offset": [
+        0,
+        52
+        ],
+        "anchor_from": "top_middle",
+        "anchor_to": "top_middle",
+        "alpha": 0.5
+    },
+    "root_panel": {
+        "modifications": [
+            {
+                "array_name": "controls",
+                "operation": "insert_front",
+                "value": [
+                    {
+                        "New_Player_Animation_Image@hud.New_Player_Animation_Image": {}
+                    },
+                    {
+                        "New_Player_Animation_UI@hud.New_Player_Animation_UI": {}
+                    },
+                    {
+                        "New_Player_Animation_UI1@hud.New_Player_Animation_UI1": {}
+                    },
+                    {
+                        "New_Player_Animation_UI2@hud.New_Player_Animation_UI2": {}
+                    }
+                ]
+            }
+        ]
+    }
+}
+  

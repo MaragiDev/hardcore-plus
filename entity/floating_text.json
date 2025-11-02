@@ -1,0 +1,27 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "are:floating_text",
+			"spawn_egg": {
+				"base_color": "#c9ffe5",
+				"overlay_color": "#dbfff8"
+			},
+			"render_controllers": [
+				"controller.render.floating_text"
+			],
+			"geometry": {
+				"default": "geometry.humanoid.floating_text"
+			},
+			"textures": {
+				"floating_text": "textures/ARE/entity/floating_text"
+			},
+			"materials": {
+				"default": "npc"
+			},
+			"scripts": {
+				"scale": "0.9375"
+			}
+		}
+	}
+}

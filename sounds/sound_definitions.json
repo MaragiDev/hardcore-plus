@@ -1,0 +1,249 @@
+{
+   "record.13": {
+    "category": "record",
+    "max_distance": 64.0,
+    "sounds": [
+      {
+        "name": "sounds/music/game/records/13",
+        "stream": false,
+        "volume": 0.5,
+        "load_on_low_memory": false,
+        "interruptible": false
+      }
+    ]
+  },
+  "record.cat": {
+    "category": "record",
+    "max_distance": 64.0,
+    "sounds": [
+      {
+        "name": "sounds/music/game/records/cat",
+        "stream": false,
+        "volume": 0.5,
+        "load_on_low_memory": false,
+        "interruptible": false
+      }
+    ]
+  },
+  "record.blocks": {
+    "category": "record",
+    "max_distance": 64.0,
+    "sounds": [
+      {
+        "name": "sounds/music/game/records/blocks",
+        "stream": false,
+        "volume": 0.5,
+        "load_on_low_memory": false,
+        "interruptible": false
+      }
+    ]
+  },
+  "record.chirp": {
+    "category": "record",
+    "max_distance": 64.0,
+    "sounds": [
+      {
+        "name": "sounds/music/game/records/chirp",
+        "stream": false,
+        "volume": 0.5,
+        "load_on_low_memory": false,
+        "interruptible": false
+      }
+    ]
+  },
+  "record.far": {
+    "category": "record",
+    "max_distance": 64.0,
+    "sounds": [
+      {
+        "name": "sounds/music/game/records/far",
+        "stream": false,
+        "volume": 0.5,
+        "load_on_low_memory": false,
+        "interruptible": false
+      }
+    ]
+  },
+  "record.mall": {
+    "category": "record",
+    "max_distance": 64.0,
+    "sounds": [
+      {
+        "name": "sounds/music/game/records/mall",
+        "stream": false,
+        "volume": 0.5,
+        "load_on_low_memory": false,
+        "interruptible": false
+      }
+    ]
+  },
+  "record.mellohi": {
+    "category": "record",
+    "max_distance": 64.0,
+    "sounds": [
+      {
+        "name": "sounds/music/game/records/mellohi",
+        "stream": false,
+        "volume": 0.5,
+        "load_on_low_memory": false,
+        "interruptible": false
+      }
+    ]
+  },
+  "record.stal": {
+    "category": "record",
+    "max_distance": 64.0,
+    "sounds": [
+      {
+        "name": "sounds/music/game/records/stal",
+        "stream": false,
+        "volume": 0.5,
+        "load_on_low_memory": false,
+        "interruptible": false
+      }
+    ]
+  },
+  "record.strad": {
+    "category": "record",
+    "max_distance": 64.0,
+    "sounds": [
+      {
+        "name": "sounds/music/game/records/strad",
+        "stream": false,
+        "volume": 0.5,
+        "load_on_low_memory": false,
+        "interruptible": false
+      }
+    ]
+  },
+  "record.ward": {
+    "category": "record",
+    "max_distance": 64.0,
+    "sounds": [
+      {
+        "name": "sounds/music/game/records/ward",
+        "stream": false,
+        "volume": 0.5,
+        "load_on_low_memory": false,
+        "interruptible": false
+      }
+    ]
+  },
+  "record.11": {
+    "category": "record",
+    "max_distance": 64.0,
+    "sounds": [
+      {
+        "name": "sounds/music/game/records/11",
+        "stream": false,
+        "volume": 0.5,
+        "load_on_low_memory": false,
+        "interruptible": false
+      }
+    ]
+  },
+  "record.wait": {
+    "category": "record",
+    "max_distance": 64.0,
+    "sounds": [
+      {
+        "name": "sounds/music/game/records/wait",
+        "stream": false,
+        "volume": 0.5,
+        "load_on_low_memory": false,
+        "interruptible": false
+      }
+    ]
+  },
+  "record.pigstep": {
+    "category": "record",
+    "max_distance": 64.0,
+    "sounds": [
+        {
+            "name": "sounds/music/game/records/pigstep_master",
+            "stream": false,
+            "volume": 0.5,
+            "load_on_low_memory": false,
+        "interruptible": false
+        }
+    ]
+  },
+  "record.otherside": {
+    "category": "record",
+    "max_distance": 64.0,
+    "sounds": [
+        {
+            "name": "sounds/music/game/records/otherside",
+            "stream": false,
+            "volume": 0.5,
+            "load_on_low_memory": false,
+        "interruptible": false
+        }
+    ]
+  },
+  "record.5": {
+    "category": "record",
+    "max_distance": 64.0,
+    "sounds": [
+        {
+            "name": "sounds/music/game/records/5",
+            "stream": false,
+            "volume": 0.5,
+            "load_on_low_memory": false,
+        "interruptible": false
+        }
+    ]
+  },
+  "record.relic": {
+    "category": "record",
+    "max_distance": 64.0,
+    "sounds": [
+        {
+            "name": "sounds/music/game/records/relic",
+            "stream": false,
+            "volume": 0.5,
+            "load_on_low_memory": false,
+            "interruptible": false
+        }
+    ]
+  },
+  "record.creator": {
+    "category": "record",
+    "max_distance": 64.0,
+    "sounds": [
+        {
+            "name": "sounds/music/game/records/creator",
+            "stream": false,
+            "volume": 0.5,
+            "load_on_low_memory": false,
+            "interruptible": false
+        }
+    ]
+  },
+  "record.creator_music_box": {
+    "category": "record",
+    "max_distance": 64.0,
+    "sounds": [
+        {
+            "name": "sounds/music/game/records/creator_music_box",
+            "stream": false,
+            "volume": 0.5,
+            "load_on_low_memory": false,
+            "interruptible": false
+        }
+    ]
+  },
+  "record.precipice": {
+    "category": "record",
+    "max_distance": 64.0,
+    "sounds": [
+        {
+            "name": "sounds/music/game/records/precipice",
+            "stream": false,
+            "volume": 0.5,
+            "load_on_low_memory": false,
+            "interruptible": false
+        }
+    ]
+  }
+}

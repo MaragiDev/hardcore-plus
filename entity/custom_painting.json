@@ -1,0 +1,27 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "are:custom_painting",
+			"spawn_egg": {
+				"base_color": "#c9ffe5",
+				"overlay_color": "#dbfff8"
+			},
+			"render_controllers": [
+				"controller.render.custom_painting"
+			],
+			"geometry": {
+				"default": "geometry.humanoid.custom_painting"
+			},
+			"textures": {
+				"custom_painting": "textures/ARE/entity/custom_painting"
+			},
+			"materials": {
+				"default": "npc"
+			},
+			"scripts": {
+				"scale": "0.9375"
+			}
+		}
+	}
+}

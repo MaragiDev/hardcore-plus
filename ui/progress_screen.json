@@ -1,0 +1,27 @@
+{
+  "namespace":"progress",
+  "overworld_bg":{
+     "type":"image",
+     "texture":"textures/dimension_loading_screens/overworld",
+     "fill":true
+  },
+  "overworld_loading_progress_screen":{
+     "$screen_bg_content":"progress.overworld_bg"
+  },
+  "nether_bg":{
+     "type":"image",
+     "texture":"textures/dimension_loading_screens/nether",
+     "fill":true
+  },
+  "nether_loading_progress_screen":{
+     "$screen_bg_content":"progress.nether_bg"
+  },
+  "theend_bg":{
+     "type":"image",
+     "texture":"textures/dimension_loading_screens/theend",
+     "fill":true
+  },
+  "theend_loading_progress_screen":{
+     "$screen_bg_content":"progress.theend_bg"
+  }
+}

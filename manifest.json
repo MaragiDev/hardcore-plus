@@ -1,0 +1,17 @@
+{
+    "format_version": 1,
+    "header": {
+        "name": "Clidewood Essentials RP",
+        "description": "5.6",
+        "uuid": "d37d9201-8153-48d7-8ed3-b5a60572116b",
+        "version": [5, 6, 0]
+    },
+    "modules": [
+        {
+            "type": "resources",
+            "description": "Created by MajorRage3367!",
+            "uuid": "531bd34d-5cc8-45df-a8ce-166bdcd007e8",
+            "version": [5, 6, 0]
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "format_version": "1.19.20",
+    "are:super_deny": {
+        "textures": "super_deny",
+        "sound": "stone"
+    },
+    "are:ultra_deny": {
+        "textures": "ultra_deny",
+        "sound": "stone"
+    },
+    "are:hyper_deny": {
+        "textures": "hyper_deny",
+        "sound": "stone"
+    }
+}
