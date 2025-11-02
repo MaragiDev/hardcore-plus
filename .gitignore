@@ -1,0 +1,36 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore local configuration files (if any)
+.vscode/
+.settings/
+
+# Ignore build or cache folders (if used)
+.cache/
+build/
+dist/
+
+# Ignore addon-specific cache or temp files
+*.mcpack
+*.mcworld
+
+# Ignore logs
+*.log
+
+# Ignore local user-specific files
+*.sublime-workspace
+*.sublime-project
+
+# Ignore temporary files
+*~
+*.swp
+*.bak
+*.tmp
+.zip
+*.zip
+
+# Ignore the 'resource_packs' and 'behavior_packs' folders if you want to keep only source files
+# Uncomment if you want to ignore compiled or generated folders
+# resource_packs/
+# behavior_packs/
