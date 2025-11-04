@@ -2,16 +2,16 @@
     "format_version": 1,
     "header": {
         "name": "Hardcore+ RP",
-        "description": "v1.0",
+        "description": "v1.0.1",
         "uuid": "98fccaf0-3135-4ecb-b947-a11d736a8d8b",
-        "version": [1, 0, 0]
+        "version": [1, 0, 1]
     },
     "modules": [
         {
             "type": "resources",
             "description": "Created by MajorRage3367!",
             "uuid": "631a0269-0ee6-4acc-b6b6-844895a4f1ca",
-            "version": [1, 0, 0]
+            "version": [1, 0, 1]
         }
     ]
 }

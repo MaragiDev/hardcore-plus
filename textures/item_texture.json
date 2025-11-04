@@ -1,9 +1,12 @@
 {
-    "resource_pack_name": "Associated Realm Essentials RP",
+    "resource_pack_name": "Hardcore+ RP",
     "texture_name": "atlas.items",
     "texture_data": {
-        "are_currency": {
-            "textures": "textures/items/are_currency"
+        "hardcoreplus_soul_skull": {
+            "textures": "textures/items/hardcoreplus_soul_skull"
+        },
+        "hardcoreplus_soul_skull_fragment": {
+            "textures": "textures/items/hardcoreplus_soul_skull_fragment"
         }
     }
 }
