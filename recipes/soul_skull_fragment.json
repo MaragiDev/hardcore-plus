@@ -1,0 +1,29 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "hardcoreplus:soul_skull_fragment"
+    },
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "#E#",
+      "ENE",
+      "#E#"
+    ],
+    "key": {
+      "E": {
+        "item": "minecraft:echo_shard"
+      },
+      "#": {
+        "item": "minecraft:diamond"
+      },
+      "N": {
+        "item": "minecraft:nether_star"
+      }
+    },
+    "result": {
+      "item": "hardcoreplus:soul_skull_fragment",
+      "amount": 1
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "hardcoreplus:soul_skull"
+    },
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "##",
+      "#"
+    ],
+    "key": {
+      "#": {
+        "item": "hardcoreplus:soul_skull_fragment"
+      }
+    },
+    "result": {
+      "item": "hardcoreplus:soul_skull",
+      "amount": 1
+    }
+  }
+}
