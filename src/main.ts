@@ -23,6 +23,7 @@ ms.system.runInterval(() => {
         const isDead = deadNames.includes(plr.name);
         const currentGameMode = plr.getGameMode();
 
+<<<<<<< HEAD
         if (isDead) {
             deadPeople.forEach(deadPerson => {
                 if(deadPerson[0] == plr.name){
@@ -105,6 +106,85 @@ ms.system.runInterval(() => {
                             }
                         }
                     }
+=======
+        if (isDead && currentGameMode !== ms.GameMode.Spectator) {
+            plr.setGameMode(ms.GameMode.Spectator);
+            plr.inputPermissions.setPermissionCategory(ms.InputPermissionCategory.Movement, false)
+        } else if(!isDead && currentGameMode == ms.GameMode.Spectator){
+            plr.setGameMode(ms.GameMode.Survival);
+            plr.inputPermissions.setPermissionCategory(ms.InputPermissionCategory.Movement, true)
+        }
+    });
+}, 1);
+
+ms.system.runInterval(() => {
+    const deadObjective = ms.world.scoreboard.getObjective("hardcorePlus.save.deadPlayers");
+    const deadParticipants = deadObjective ? deadObjective.getParticipants() : [];
+    const deadPeople = deadParticipants.map(score => [
+        score.displayName.split("\ue1ff\ue1ff\ue1ff")[0],
+        score.displayName.split("\ue1ff\ue1ff\ue1ff")[1],
+        score.displayName.split("\ue1ff\ue1ff\ue1ff")[2]
+    ]);
+    
+    ms.world.getPlayers().forEach(plr => {
+        deadPeople.forEach((deadPersonInfo) => {
+            const coords = deadPersonInfo[1].split(" ");
+            const blockPosition = {
+                x: parseFloat(coords[0]),
+                y: parseFloat(coords[1]),
+                z: parseFloat(coords[2])
+            } as ms.Vector3;
+
+            const radius = 15;
+
+            const dx = plr.location.x - blockPosition.x;
+            const dy = plr.location.y - blockPosition.y;
+            const dz = plr.location.z - blockPosition.z;
+
+            const distanceSquared = dx * dx + dy * dy + dz * dz;
+
+            if (distanceSquared <= radius * radius) {
+                ms.system.run(() => {
+                    if(plr?.getComponent("minecraft:inventory")?.container?.getSlot(plr.selectedSlotIndex)?.getItem()?.typeId?.includes("hardcoreplus:soul_skull") && !(plr?.getComponent("minecraft:inventory")?.container?.getSlot(plr.selectedSlotIndex)?.getItem()?.typeId?.includes("hardcoreplus:soul_skull_"))){
+                        if(plr?.getComponent("minecraft:inventory")?.container?.getSlot(plr.selectedSlotIndex)?.getItem()?.nameTag?.toLowerCase() == deadPersonInfo[0].toLowerCase()){
+                            if(plr?.dimension?.id == deadPersonInfo[2]){
+                                // yes now revive the player
+                                plr.getComponent("minecraft:inventory").container.getSlot(plr.selectedSlotIndex).setItem();
+
+                                plr.dimension.spawnEntity("minecraft:lightning_bolt", {x: blockPosition.x, y: blockPosition.y, z: blockPosition.z})
+                                plr.dimension.spawnEntity("minecraft:lightning_bolt", {x: blockPosition.x, y: blockPosition.y, z: blockPosition.z})
+                                plr.dimension.spawnEntity("minecraft:lightning_bolt", {x: blockPosition.x, y: blockPosition.y, z: blockPosition.z})
+
+                                plr.dimension.runCommand(`/particle minecraft:crop_growth_area_emitter ${blockPosition.x} ${blockPosition.y} ${blockPosition.z}`)
+                                plr.dimension.runCommand(`/particle minecraft:crop_growth_area_emitter ${blockPosition.x} ${blockPosition.y} ${blockPosition.z}`)
+                                plr.dimension.runCommand(`/particle minecraft:crop_growth_area_emitter ${blockPosition.x} ${blockPosition.y} ${blockPosition.z}`)
+
+                                ms.world.getPlayers().forEach(plr2 => {
+                                    plr.dimension.playSound("note.bit", { x: plr2.location.x, y: plr2.location.y, z: plr2.location.z }, { pitch: 2 })
+                                    plr.dimension.playSound("note.bit", { x: plr2.location.x, y: plr2.location.y, z: plr2.location.z }, { pitch: 1.5 })
+
+                                    ms.system.runTimeout(() => {
+                                        plr.dimension.playSound("note.bit", { x: plr2.location.x, y: plr2.location.y, z: plr2.location.z }, { pitch: 1 })
+                                        plr.dimension.playSound("note.bit", { x: plr2.location.x, y: plr2.location.y, z: plr2.location.z }, { pitch: 0.75 })
+
+                                        ms.system.runTimeout(() => {
+                                            plr.dimension.playSound("note.bit", { x: plr2.location.x, y: plr2.location.y, z: plr2.location.z }, { pitch: 4 })
+                                            plr.dimension.playSound("note.bit", { x: plr2.location.x, y: plr2.location.y, z: plr2.location.z }, { pitch: 2.5 })
+                                        }, 10)
+                                    }, 10)
+                                })
+
+                                ms.world.sendMessage(`§e${deadPersonInfo[0]} has just been REVIVED!`)
+
+                                ms.world.scoreboard.getObjective("hardcorePlus.save.deadPlayers").getParticipants().forEach(participant => {
+                                    if(participant.displayName.split("\ue1ff\ue1ff\ue1ff")[0] == deadPersonInfo[0]){
+                                        ms.world.scoreboard.getObjective("hardcorePlus.save.deadPlayers").removeParticipant(participant);
+                                    }
+                                })
+                            }
+                        }
+                    }
+>>>>>>> e8addde8424cafcadff70df5047e5cab27ccd192
                 })
             }
         });
