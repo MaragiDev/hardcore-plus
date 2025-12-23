@@ -2,12 +2,12 @@
 	"format_version": 2,
 	"header": {
 		"name": "Hardcore+",
-		"description": "Version 1.0",
+		"description": "Version 1.0.3",
 		"uuid": "baf32714-45ab-42e3-bc65-598eab48f54e",
 		"version": [
 			1,
 			0,
-			0
+			3
 		],
 		"min_engine_version": [
 			1,
@@ -17,7 +17,7 @@
 	},
 	"modules": [
 		{
-			"description": "Version 25.3",
+			"description": "Version 1.0.3",
 			"type": "data",
 			"uuid": "a8517ab8-85f0-49bf-9d08-b1f35b782ce6",
 			"version": [
@@ -43,11 +43,11 @@
 		{
 			"module_name": "resource",
 			"uuid": "98fccaf0-3135-4ecb-b947-a11d736a8d8b",
-			"version": [1, 0, 0]
+			"version": [1, 0, 1]
 		},
 		{
 			"module_name": "@minecraft/server",
-			"version": "2.4.0-beta"
+			"version": "2.6.0-beta"
 		},
 		{
 			"module_name": "@minecraft/server-ui",
