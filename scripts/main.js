@@ -12,7 +12,6 @@ ms.system.runInterval(() => {
     ms.world.getPlayers().forEach(plr => {
         const isDead = deadNames.includes(plr.name);
         const currentGameMode = plr.getGameMode();
-<<<<<<< HEAD
         if (isDead) {
             deadPeople.forEach(deadPerson => {
                 if (deadPerson[0] == plr.name) {
@@ -25,15 +24,6 @@ ms.system.runInterval(() => {
         }
         else if (!isDead && currentGameMode == ms.GameMode.Spectator) {
             plr.setGameMode(ms.GameMode.Survival);
-=======
-        if (isDead && currentGameMode !== ms.GameMode.Spectator) {
-            plr.setGameMode(ms.GameMode.Spectator);
-            plr.inputPermissions.setPermissionCategory(ms.InputPermissionCategory.Movement, false);
-        }
-        else if (!isDead && currentGameMode == ms.GameMode.Spectator) {
-            plr.setGameMode(ms.GameMode.Survival);
-            plr.inputPermissions.setPermissionCategory(ms.InputPermissionCategory.Movement, true);
->>>>>>> e8addde8424cafcadff70df5047e5cab27ccd192
         }
     });
 }, 1);
