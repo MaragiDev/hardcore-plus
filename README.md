@@ -39,7 +39,7 @@ Once you have **3 fragments**, combine them to create the Soul Skull.
 |  | `F _` |
 *(F = Soul Skull Fragment)*
 
-## 📝 Installation & Setup
+## Installation & Setup
 
 1.  **Enable Beta APIs:** You must toggle the "Beta APIs" Experimental Gameplay option in your world settings.
 2.  **Enable Cheats:** You must enable cheats on your world in order for the addon to operate properly.
